@@ -8,4 +8,8 @@ var mySwiper = new Swiper(".swiper-container", {
     nextEl: ".slider-button--next",
   },
   // effect: "cube",
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 });
