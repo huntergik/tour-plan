@@ -602,6 +602,11 @@ template {
   line-height: 18px;
 }
 
+.rating__lowercase {
+  font-size: 10px;
+  line-height: 13px;
+}
+
 .swiper-container {
   width: 100%;
   height: 450px;
