@@ -30,14 +30,20 @@
       text-transform: uppercase
       font-size: 14px
       line-height: 18px
+      // Ховер эффект
+    &__link:hover, :focus, :active 
+      box-shadow: 0 0 8px rgba(170, 167, 167, 0.8)
 .logo
   width: 177px
+  // Ховер эффект
+.logo:hover, focus, active 
+  transform: translateY(-5px)
 .search
   display: flex
   position: relative
   overflow: hidden
   border-radius: 6px
-  height: 40px
+  height: 40px  
   &__input
     // display: flex
     justify-content: center
@@ -60,6 +66,10 @@
     height: 100%
     border: none
     background-color: $primary
+    // Ховер эффект
+  &__button:hover
+    background-color: #d66c7f
+    box-shadow: 0 0 3px #d66c7f   
 .user
   display: flex
   align-items: center
@@ -69,10 +79,16 @@
     height: 40px
     border-radius: 50%
     object-fit: cover
+    // Ховер эффект
+  &__avatar:hover 
+    box-shadow: 0 0 8px rgba(170, 167, 167, 0.8)
   &__name
     margin-left: 18px
     font-size: 14px
     line-height: 18px
     color: $text-color
+    // Ховер эффект
+  &__name:hover
+    text-decoration: underline
     
     

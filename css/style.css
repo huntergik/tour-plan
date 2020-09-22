@@ -424,8 +424,18 @@ template {
   line-height: 18px;
 }
 
+.navbar-menu__link:hover, .navbar-menu :focus, .navbar-menu :active {
+  -webkit-box-shadow: 0 0 8px rgba(170, 167, 167, 0.8);
+          box-shadow: 0 0 8px rgba(170, 167, 167, 0.8);
+}
+
 .logo {
   width: 177px;
+}
+
+.logo:hover, focus, active {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .search {
@@ -469,6 +479,12 @@ template {
   background-color: #EC1F46;
 }
 
+.search__button:hover {
+  background-color: #d66c7f;
+  -webkit-box-shadow: 0 0 3px #d66c7f;
+          box-shadow: 0 0 3px #d66c7f;
+}
+
 .user {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -487,11 +503,20 @@ template {
      object-fit: cover;
 }
 
+.user__avatar:hover {
+  -webkit-box-shadow: 0 0 8px rgba(170, 167, 167, 0.8);
+          box-shadow: 0 0 8px rgba(170, 167, 167, 0.8);
+}
+
 .user__name {
   margin-left: 18px;
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+
+.user__name:hover {
+  text-decoration: underline;
 }
 
 .breadcrumb-list {
@@ -521,8 +546,12 @@ template {
   color: inherit;
 }
 
+.breadcrumb-list__link:hover {
+  text-decoration: underline;
+}
+
 .hotel {
-  padding-top: 23px;
+  padding-top: 10px;
   padding-bottom: 70px;
 }
 
@@ -612,6 +641,12 @@ template {
   color: #fff;
 }
 
+.offer:hover, focus, active {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px #d66c7f;
+          box-shadow: 0 0 5px #d66c7f;
+}
+
 .rating {
   max-width: 65px;
   min-height: 45px;
@@ -635,6 +670,12 @@ template {
 .rating__lowercase {
   font-size: 10px;
   line-height: 13px;
+}
+
+.rating:hover, focus, active {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px #d66c7f;
+          box-shadow: 0 0 5px #d66c7f;
 }
 
 .swiper-container {
@@ -685,9 +726,23 @@ template {
   background-image: url(../img/arrow-next.svg);
 }
 
+.slider-button--next:hover, .slider-button focus, .slider-button active {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px #07070746;
+          box-shadow: 0 0 10px #07070746;
+  background-color: #07070746;
+}
+
 .slider-button--prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
+}
+
+.slider-button--prev:hover, .slider-button focus, .slider-button active {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px #07070746;
+          box-shadow: 0 0 10px #07070746;
+  background-color: #07070746;
 }
 
 .booking {
@@ -801,6 +856,11 @@ template {
   line-height: 25px;
 }
 
+.booking__number:hover {
+  color: #EC1F46;
+  text-decoration: underline;
+}
+
 .booking__num {
   margin-left: 8px;
 }
@@ -816,6 +876,12 @@ template {
   border: none;
   color: #fff;
   cursor: pointer;
+}
+
+.booking__button:hover, .booking focus, .booking active {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px #d66c7f;
+          box-shadow: 0 0 5px #d66c7f;
 }
 
 .map {
