@@ -991,7 +991,7 @@ template {
 }
 
 @media (max-width: 1200px) {
-  .container {
+  .container, .newsletter-wrapper {
     max-width: 960px;
   }
   .slider {
