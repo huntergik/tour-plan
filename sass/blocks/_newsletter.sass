@@ -27,13 +27,16 @@
     max-width: 731px
     margin: auto
   &-title 
-    // display: flex
-    // flex-direction: column
+    display: flex
+    flex-direction: column
     color: $light
     font-style: normal
     font-weight: 300
     font-size: 24px
     line-height: 30px
+    // min-width: 40%
+    // max-width: 40%
+    width: 40%
     &__strong
       display: block
       // font-style: normal
@@ -74,5 +77,8 @@
     background-color: $primary
     color: $light
     cursor: pointer
+  &__button:hover
+    background-color: #d66c7f
+    box-shadow: 0 0 3px #d66c7f
 		
 
