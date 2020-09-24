@@ -1061,6 +1061,7 @@ template {
   background-color: transparent;
   cursor: pointer;
   z-index: 99;
+  outline: none;
 }
 
 .reviews-slider__button--prev {
@@ -1415,10 +1416,8 @@ template {
     overflow: hidden;
   }
   .hotel-slider__image {
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 350px;
-    max-height: 350px;
+    width: 100%;
+    height: auto;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -1486,6 +1485,11 @@ template {
   .card {
     width: 49%;
     height: 255px;
+  }
+  .card__image {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
