@@ -1,14 +1,22 @@
 @media (max-width: 1200px)
   .container, .newsletter-wrapper
     max-width: 960px
-  .slider
-    width: 590px
   .hotel
+    &__slider
+      margin-right: 30px
     &-slider
+      max-width: 700px
+      height: 450px
+      overflow: hidden
       &__image
-        width: 100%
-        height: 100%
+        min-width: 100%
+        max-width: 100%
+        min-height: 100%
         object-fit: cover
+  .card
+    width: 230px
+    height: 230px
+        
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -46,6 +54,14 @@
     &-slider
       &__item
         max-width: 580px
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 340px
+    height: 250px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -85,14 +101,23 @@
       &__offer
         order: -1
         margin-left: 0
+                
   .stars
     flex-basis: auto
   .hotel
     &-right
       flex-direction: column
       min-height: 450px
+    &__slider
+      margin-right: 2000px
     &-slider
+      width: 100%
       height: 350px
+      &__image
+        // inline: flex
+        // object-fit: cover
+        // min-height: 350px
+        // max-height: 350px
   .booking
     width: 100%
   .map
@@ -108,6 +133,11 @@
   .subscribe 
     width: 100%
   .reviews
+    padding: 40px 0 60px 0
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
     &-slider
       &__item
         padding: 0 30px 30px
@@ -123,6 +153,29 @@
           right: 50%
           margin-right: -65px
           transform: translate(50%, 0)
+  .activities
+    padding-top: 40px
+    padding-bottom: 60px        
+  .card
+    width: 49%
+    height: 255px
+@media (max-width: 626px)
+  .hotel
+    &__slider
+      margin-right: 20px
+    &-slider
+      // width: 100%
+      // max-height: 350px
+      height: 70%
+      &__image
+        // min-width: 100%
+        max-width: 100%
+        
+        object-fit: cover
+        // background-size: 100% 100%
+        // width: 100%
+        // min-height: 350px
+        // height: 100%
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -133,13 +186,29 @@
     &__slider
       margin-bottom: 20px
     &-slider
-      height: 250px
+      &__image
+        
   .newsletter
     padding: 76px 0 83px 0
     &__title
       margin-bottom: 37px
   .subscribe
     width: 100%
+  .reviews
+    padding: 40px 0 40px 0
+    &__title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 42px
+    &-slider
+      &__item
+        padding: 0 30px 36px
+  .card
+    width: 100%
+    // height: 255px
+    overflow: hidden
+    &__image
+      // object-fit: cover
 @media (max-width: 480px)
   .navbar
     &-top
