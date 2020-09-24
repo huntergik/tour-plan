@@ -1505,12 +1505,12 @@ template {
   }
   .hotel-slider {
     width: 100%;
-    height: auto;
+    height: 300px;
     overflow: hidden;
   }
   .hotel-slider__image {
     width: 100%;
-    height: 300px;
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -1561,12 +1561,12 @@ template {
   }
   .hotel-slider {
     width: 100%;
-    height: auto;
+    height: 250px;
     overflow: hidden;
   }
   .hotel-slider__image {
     width: 100%;
-    height: 250px;
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
