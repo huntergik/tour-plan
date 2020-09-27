@@ -921,6 +921,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
+  background-color: grey;
 }
 
 .packages-card {
@@ -937,6 +938,8 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 100%;
+  height: 500px;
 }
 
 .packages-card__cards {
@@ -953,6 +956,8 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 100%;
+  height: 500px;
 }
 
 .packages-card__image {
@@ -1690,6 +1695,9 @@ template {
     width: 230px;
     height: 230px;
   }
+  .packages-card__content {
+    padding: 26px 21px 25px 44px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1761,6 +1769,53 @@ template {
   .card {
     width: 340px;
     height: 250px;
+  }
+  .packages-grid {
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .packages-card__content {
+    padding: 46px 21px 25px 44px;
+  }
+  .card-1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1 / 13;
+  }
+  .card-2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1 / 7;
+  }
+  .card-3 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-column: 7 / 13;
+  }
+  .card-4 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1 / 7;
+  }
+  .card-5 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-column: 7 / 13;
   }
 }
 
@@ -1915,6 +1970,88 @@ template {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .packages {
+    padding-top: 20px;
+  }
+  .packages-grid {
+    gap: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .packages-card {
+    height: 400px;
+  }
+  .packages-card__cards {
+    height: 400px;
+  }
+  .packages-card__content {
+    padding: 20px 21px 25px 20px;
+  }
+  .packages-card__content-contents {
+    padding: 15px 21px 20px 30px;
+    height: 200px;
+  }
+  .packages-card__image {
+    height: 400px;
+  }
+  .packages-card__image-images {
+    height: 200px;
+  }
+  .packages-card__content {
+    height: 400px;
+  }
+  .box__title {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .box__title-titles {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .box__text {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 15px;
+  }
+  .box-info {
+    margin-top: 28px;
+  }
+  .box-info__infos {
+    margin-top: 15px;
+  }
+  .box-info__room {
+    margin-top: 7px;
+  }
+  .box-price {
+    margin-top: 28px;
+  }
+  .box-price__prices {
+    margin-top: 15px;
+  }
+  .box-price__underline {
+    font-size: 21px;
+    margin-top: 5px;
+  }
+  .box-price__underline-underline {
+    font-size: 21px;
+    margin-top: 5px;
+  }
+  .box__button {
+    padding: 10px 20px;
+  }
+  .box__button-buttons {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 580px) {
+  .box-info {
+    margin-top: 19px;
+  }
+  .box-price {
+    margin-top: 19px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1963,6 +2100,56 @@ template {
     width: 100%;
     height: 255px;
     overflow: hidden;
+  }
+  .packages-grid {
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+  }
+  .none-stars {
+    display: none;
+  }
+  .none-text {
+    display: none;
+  }
+  .card-1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1 / 13;
+  }
+  .card-2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1 / 13;
+  }
+  .card-3 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1 / 13;
+  }
+  .card-4 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4 / 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1 / 13;
+  }
+  .card-5 {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5 / 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1 / 13;
   }
 }
 
