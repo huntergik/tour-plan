@@ -24,6 +24,8 @@
   .footer
     &__input
       flex-basis: 100%
+    &__copyrait
+      margin-left: 80px
       
   
 @media (max-width: 992px)
@@ -99,6 +101,8 @@
     grid-column: 7 / 13
 
   .footer
+    padding-top: 80px
+    padding-bottom: 40px
     &-wrapper
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
@@ -128,6 +132,12 @@
       &-form
         grid-column: span 5
         grid-row: 4
+    &__bottom
+      grid-column: 1 / 7
+    &__copyrait
+      margin: 0
+
+
 
 @media (max-width: 768px)
   .container
@@ -406,7 +416,9 @@
         grid-column: 1
       &-form
         grid-row: 7
-        grid-column: 1
+        grid-column: 1 / 7
+    &__bottom
+      grid-row: 8 / 9
     &__form
       display: flex
     &__message
@@ -426,7 +438,15 @@
       margin-bottom: 15px
       order: 1
       
-
+@media (max-width: 510px)
+  .footer
+    &__bottom
+      // display: flex
+      flex-direction: column
+      align-items: start
+      grid-row: 8 / 9
+    &__payment
+      margin-top: 10px
 
 @media (max-width: 480px)
   .navbar
@@ -469,11 +489,29 @@
     &__title
       &--inline
         flex: 0 1 100%
-
+    
+      
+@media (max-width: 350px)
+  .footer
+    &__contact
+      &-details
+      &-form
+        grid-row: 7
+        grid-column: 1 / 6
+    
+      
+    
 
 @media (max-width: 320px)
   .navbar
     &-top
       padding-top: 25px
       padding-bottom: 25px
+
+  .footer
+    &__contact
+      &-details
+      &-form
+        grid-row: 7
+        grid-column: 1 / 5
   
