@@ -2253,6 +2253,7 @@ template {
   }
   .navbar-bottom--visible {
     display: block;
+    overflow: auto;
   }
   .navbar-menu {
     -webkit-box-orient: vertical;
@@ -2819,6 +2820,9 @@ template {
     padding-top: 27px;
     padding-bottom: 27px;
   }
+  .navbar-bottom {
+    top: 72px;
+  }
   .newsletter-title {
     font-style: normal;
     font-weight: 300;
@@ -3010,6 +3014,7 @@ template {
   }
   .navbar-bottom {
     padding-top: 20px;
+    top: 68px;
   }
   .footer-wrapper {
     grid-gap: 10px;
