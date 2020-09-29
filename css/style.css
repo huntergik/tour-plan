@@ -2938,6 +2938,12 @@ template {
   }
 }
 
+@media (max-width: 400px) {
+  .search__input {
+    width: 240px;
+  }
+}
+
 @media (max-width: 350px) {
   .footer__contact-form {
     -ms-grid-row: 7;
@@ -3017,6 +3023,9 @@ template {
     font-size: 10px;
     line-height: 12px;
     margin-top: 5px;
+  }
+  .search__input {
+    width: 220px;
   }
 }
 /*# sourceMappingURL=style.css.map */

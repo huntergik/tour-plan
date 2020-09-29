@@ -593,7 +593,6 @@
       &-buttons
         padding: 7px 15px
 
-
   .footer
     &__social
       &-network
@@ -659,6 +658,12 @@
       &-buttons
         padding: 7px 15px
 
+@media (max-width: 400px)
+  .navbar
+    &__mobile
+  .search
+    &__input
+      width: 240px
 
 @media (max-width: 350px)
   .footer
@@ -668,9 +673,6 @@
         grid-row: 7
         grid-column: 1 / 6
     
-      
-    
-
 @media (max-width: 320px)
   .navbar
     &-top
@@ -708,6 +710,7 @@
         font-size: 12px
         line-height: 15px
         margin-top: 7px
+
 @media (max-width: 280px)
   .footer
     &-wrapper
@@ -720,3 +723,9 @@
         font-size: 10px
         line-height: 12px
         margin-top: 5px
+
+  .navbar
+    &__mobile
+  .search
+    &__input
+      width: 220px
