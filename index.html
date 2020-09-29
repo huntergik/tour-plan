@@ -279,8 +279,8 @@
               <button class="button booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
-            <div id="map" class="map"></div>
-            <!-- <div class="map">
+            <!-- <div id="map" class="map"></div> -->
+            <div class="map">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d988.0104663780853!2d98.29436949017253!3d7.890689096949103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2skz!4v1600757511553!5m2!1sru!2skz"
                 width="100%"
@@ -291,7 +291,7 @@
                 aria-hidden="false"
                 tabindex="0"
               ></iframe>
-            </div> -->
+            </div>
             <!-- /.map -->
           </div>
           <!-- /.hotel-right -->
@@ -893,11 +893,13 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="img/vertical-logo.svg"
-            alt="Logo: Best Tour Plan"
-            class="logo footer__logo"
-          />
+          <a href="index.html" class="footer__logo_wrapper">
+            <img
+              src="img/vertical-logo.svg"
+              alt="Logo: Best Tour Plan"
+              class="logo footer__logo"
+            />
+          </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -957,14 +959,32 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"
-                ><img src="img/facebook.svg" alt="Icon: facebook"
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="footer__link"
+                ><img
+                  class="footer__link_hover"
+                  src="img/facebook.svg"
+                  alt="Icon: facebook"
               /></a>
-              <a href="#" class="footer__link"
-                ><img src="img/youtube.svg" alt="Icon: youtube"
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                class="footer__link"
+                ><img
+                  class="footer__link_hover"
+                  src="img/youtube.svg"
+                  alt="Icon: youtube"
               /></a>
-              <a href="#" class="footer__link"
-                ><img src="img/instagram.svg" alt="Icon: instagram"
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="footer__link"
+                ><img
+                  class="footer__link_hover"
+                  src="img/instagram.svg"
+                  alt="Icon: instagram"
               /></a>
             </div>
             <!-- /.footer__social-links -->
@@ -1002,8 +1022,10 @@
                     alt="Icon: map-marker"
                   />
                 </div>
-                9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
-                States
+                <a href="#" class="footer__link"
+                  >9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
+                  States</a
+                >
               </li>
 
               <li class="footer__item footer__item--mb-2">
@@ -1014,10 +1036,19 @@
                     alt="Icon: contact-phone-call"
                   />
                 </div>
-                Tel (business hours) : 269 1500 <br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-                brpm) <br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div class="footer__link_wrapper">
+                  <a href="#" class="footer__link"
+                    >Tel (business hours) : 269 1500</a
+                  >
+                  <a href="#" class="footer__link"
+                    >Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am –
+                    20:00 brpm)</a
+                  >
+
+                  <a href="#" class="footer__link"
+                    >Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</a
+                  >
+                </div>
               </li>
 
               <li class="footer__item footer__item--mb-2">
@@ -1028,7 +1059,7 @@
                     alt="Icon: email"
                   />
                 </div>
-                cherly.lawson@example.com
+                <a href="#" class="footer__link">cherly.lawson@example.com</a>
               </li>
             </ul>
           </div>
@@ -1085,11 +1116,9 @@
     </footer>
     <!-- /.footer -->
 
-    <!-- удалить этот див -->
-    <div style="height: 50px"></div>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/parallax.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.js"></script>
   </body>
 </html>

@@ -15,12 +15,13 @@
     width: 230px
     height: 230px
   
+
   .packages
     &-card
       &__content 
         padding: 26px 21px 25px 44px
-
   
+
   .footer
     &__input
       flex-basis: 100%
@@ -28,6 +29,7 @@
       margin-left: 80px
       
   
+
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -77,13 +79,13 @@
     width: 340px
     height: 250px
 
+
   .packages
     &-grid
       grid-template-rows: repeat(3, 1fr)
     &-card
       &__content 
         padding: 46px 21px 25px 44px
-
   .card-1
     grid-row: 1 / 2
     grid-column: 1 / 13
@@ -100,6 +102,7 @@
     grid-row: 3 / 4
     grid-column: 7 / 13
 
+
   .footer
     padding-top: 80px
     padding-bottom: 40px
@@ -109,8 +112,9 @@
     &__input
       flex-basis: 48%
     &__logo
-      grid-row: 1 / 2 
-      grid-column: span 2    
+      &_wrapper
+        grid-row: 1 / 2
+        grid-column: span 2
     &__social
       &-network
         grid-row: 1 / 2
@@ -134,8 +138,12 @@
         grid-row: 4
     &__bottom
       grid-column: 1 / 7
+      margin-top: 5px
     &__copyrait
       margin: 0
+    &__link
+      &_wrapper
+        max-width: 100%
 
 
 
@@ -195,13 +203,13 @@
         width: 16px
         height: 1px
         background-color: $text-color
-
   .user
     &__name
       &_light
         color: $light
         margin: 0
         margin-top: 10px
+
 
   .hotel
     &-name
@@ -219,7 +227,6 @@
       &__offer
         order: -1
         margin-left: 0
-                
   .stars
     flex-basis: auto
   .hotel
@@ -272,6 +279,8 @@
           right: 50%
           margin-right: -65px
           transform: translate(50%, 0)
+
+
   .activities
     padding-top: 40px
     padding-bottom: 60px 
@@ -286,11 +295,16 @@
       width: 100%
       object-fit: cover
 
+
   .packages
     padding-top: 20px
+    &__title
+      font-size: 30px
+      line-height: 38px
     &-grid
       gap: 20px
       align-items: start
+      margin-top: 60px
     &-card
       height: 400px
       &__cards
@@ -350,6 +364,7 @@
       width: 104px
 
 
+
 @media (max-width: 580px)
   .box
     &-info
@@ -376,7 +391,8 @@
         width: 100%
         height: 100%
         object-fit: cover
-        
+
+
   .newsletter
     padding: 76px 0 83px 0
     &__title
@@ -399,19 +415,21 @@
     overflow: hidden
     &__image
       
+
   .packages
+    &__title
+      font-size: 25px
+      line-height: 30px
     &-grid
       grid-template-rows: repeat(5, 1fr)
-
-  .packeges
-  .box
+      margin-top: 50px
+    // .packeges
+    // .box
   .none
     &-stars
       display: none
     &-text
       display: none
-    
-
   .packages
     &-card 
       height: 300px
@@ -480,7 +498,6 @@
     grid-column: 1 / 13
 
 
-
   .footer
     padding-top: 69px
     padding-bottom: 21px
@@ -506,7 +523,7 @@
     &__contact
       &-details
         grid-row: 6
-        grid-column: 1
+        grid-column: 1 / 7
       &-form
         grid-row: 7
         grid-column: 1 / 7
@@ -531,6 +548,8 @@
       margin-bottom: 15px
       order: 1
       
+
+
 @media (max-width: 510px)
   .footer
     &__bottom
@@ -540,6 +559,8 @@
       grid-row: 8 / 9
     &__payment
       margin-top: 10px
+
+
 
 @media (max-width: 480px)
   .navbar
@@ -559,6 +580,7 @@
     &__input
       padding-left: 20px
 
+
   .hotel
     &-slider
       width: 100%
@@ -569,7 +591,12 @@
         height: 100%
         object-fit: cover
 
+
   .packages 
+    
+    &__title
+      font-size: 20px
+      line-height: 25px
     &-card   
       &__cards 
       &__content
@@ -593,6 +620,7 @@
       &-buttons
         padding: 7px 15px
 
+
   .footer
     &__social
       &-network
@@ -607,6 +635,8 @@
       &--inline
         flex: 0 1 100%
     
+
+
 @media (max-width: 440px)
   .packages 
     &-card   
@@ -617,7 +647,6 @@
         &-contents
           align-items: center
           justify-content: space-between
-         
   .box
     &__title 
       font-size: 12px
@@ -658,12 +687,16 @@
       &-buttons
         padding: 7px 15px
 
+
+
 @media (max-width: 400px)
   .navbar
     &__mobile
   .search
     &__input
       width: 240px
+
+
 
 @media (max-width: 350px)
   .footer
@@ -673,11 +706,16 @@
         grid-row: 7
         grid-column: 1 / 6
     
+
+
 @media (max-width: 320px)
   .navbar
     &-top
       padding-top: 25px
       padding-bottom: 25px
+    &-bottom
+      padding-top: 20px
+
 
   .footer
     &-wrapper
@@ -694,6 +732,24 @@
       margin-top: 15px
     &__info
       margin: 0
+    &__additional
+      margin-top: 30px
+    &__categories
+      margin-top: 30px
+    &__social
+      &-links
+        margin-top: 20px
+      &-network
+        margin-top: 30px
+    &__legal
+      margin-top: 30px
+    &__contact
+      &-details
+        margin-top: 40px
+      &-form
+        margin-top: 60px
+        
+
   
 @media (max-width: 290px)
   .footer
@@ -711,7 +767,16 @@
         line-height: 15px
         margin-top: 7px
 
+
+
 @media (max-width: 280px)
+  .navbar
+    &__mobile
+  .search
+    &__input
+      width: 220px
+
+
   .footer
     &-wrapper
       grid-gap: 10px
@@ -723,9 +788,5 @@
         font-size: 10px
         line-height: 12px
         margin-top: 5px
-
-  .navbar
-    &__mobile
-  .search
-    &__input
-      width: 220px
+    
+    
