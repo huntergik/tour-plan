@@ -1905,7 +1905,7 @@ template {
 }
 
 .footer__link_wrapper {
-  max-width: 400px;
+  max-width: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2012,6 +2012,12 @@ template {
   }
   .footer__copyrait {
     margin-left: 80px;
+  }
+  .footer__title {
+    font-size: 15px;
+  }
+  .footer__item {
+    font-size: 13px;
   }
 }
 
