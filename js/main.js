@@ -36,3 +36,11 @@ menuButton.addEventListener("click", function () {
     .querySelector(".navbar-bottom")
     .classList.toggle("navbar-bottom--visible");
 });
+
+// $(document).ready(function () {
+//   $(".header__burger").click(function (event) {
+//     $(".header__burger, header__menu").toggleClass("active");
+//     // убираем прокрутку под бургером
+//     $("body").toggleClass("lock");
+//   });
+// });

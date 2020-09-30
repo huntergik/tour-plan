@@ -391,6 +391,12 @@ template {
   display: none;
 }
 
+.navbar-top__menu-button:hover, .navbar-top focus, .navbar-top active {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px #d66c7f;
+          box-shadow: 0 0 5px #d66c7f;
+}
+
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
@@ -2254,6 +2260,8 @@ template {
   .navbar-bottom--visible {
     display: block;
     overflow: auto;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
   }
   .navbar-menu {
     -webkit-box-orient: vertical;
