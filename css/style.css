@@ -2249,19 +2249,17 @@ template {
             justify-content: center;
   }
   .navbar-bottom {
-    display: none;
     position: fixed;
     left: 0;
     right: 0;
-    bottom: 0;
-    top: 78px;
+    top: -150%;
     padding-top: 30px;
+    -webkit-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
   }
   .navbar-bottom--visible {
-    display: block;
     overflow: auto;
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
+    top: 78px;
   }
   .navbar-menu {
     -webkit-box-orient: vertical;

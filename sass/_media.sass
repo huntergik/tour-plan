@@ -152,8 +152,8 @@
 
 
 @media (max-width: 768px)
-    // body.lock 
-    //   overflow: hidden
+  // body.lock
+  //   overflow: hidden
   
   .container
     max-width: 576px
@@ -178,18 +178,22 @@
       flex-direction: column
       justify-content: center
     &-bottom
-      display: none
+      // display: none
+      // bottom: 0
+      // top: 78px
       position: fixed
       left: 0
       right: 0
-      bottom: 0
-      top: 78px
+      top: -150%
       padding-top: 30px
+      transition: all 0.7s ease 0s
       &--visible
-        display: block
+        // display: block
+        // transition: all 0.3s ease 0s
+        // bottom: 0
         // добавляем скролл бургер меню
         overflow: auto
-        transition: all 0.3s ease 0s
+        top: 78px
     &-menu
       flex-direction: column
       &__item
