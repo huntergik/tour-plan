@@ -393,8 +393,8 @@ template {
 
 .navbar-top__menu-button:hover, .navbar-top focus, .navbar-top active {
   border-radius: 10px;
-  -webkit-box-shadow: 0 0 5px #d66c7f;
-          box-shadow: 0 0 5px #d66c7f;
+  -webkit-box-shadow: 0 0 5px #4e4c4d;
+          box-shadow: 0 0 5px #4e4c4d;
 }
 
 .navbar__search {
@@ -2217,6 +2217,9 @@ template {
 }
 
 @media (max-width: 768px) {
+  body.lock {
+    overflow: hidden;
+  }
   .container {
     max-width: 576px;
     width: 92%;
