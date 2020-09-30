@@ -2260,6 +2260,7 @@ template {
   .navbar-bottom--visible {
     overflow: auto;
     top: 78px;
+    bottom: 0;
   }
   .navbar-menu {
     -webkit-box-orient: vertical;
