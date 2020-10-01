@@ -8,6 +8,7 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
+$email = $_POST['email'];
 
 // Формирование самого письма
 $title = "Новое обращение Best Tour Plan";
@@ -16,6 +17,7 @@ $body = "
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
+<b>Ваш почтовый ящик:</b><br>$email
 ";
 
 // Настройки PHPMailer
@@ -55,3 +57,4 @@ else {$result = "error";}
 // Отображение результата
 // echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
 header('location: thankyou.html');
+// header('location: newsletter.html');
