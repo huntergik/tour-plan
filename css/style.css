@@ -3148,6 +3148,35 @@ template {
   }
 }
 
+@media (max-height: 360px) {
+  .modal__dialog {
+    max-height: 340px;
+    padding: 25px 20px;
+  }
+  .modal__input {
+    padding: 0 13px;
+    font-size: 12px;
+    height: 40px;
+    margin-bottom: 7px;
+  }
+  .modal__message {
+    padding-left: 13px;
+    font-size: 12px;
+    height: 50px;
+    margin-bottom: 7px;
+  }
+  .modal__title {
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 7px;
+  }
+  .modal__info {
+    margin-bottom: 7px;
+  }
+}
+
 @media (max-width: 350px) {
   .footer__contact-form {
     -ms-grid-row: 7;
@@ -3208,7 +3237,30 @@ template {
     margin-top: 60px;
   }
   .modal__dialog {
-    min-width: 85%;
+    min-width: 75%;
+    padding: 25px 20px;
+  }
+  .modal__input {
+    padding: 0 13px;
+    font-size: 12px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  .modal__message {
+    padding-left: 13px;
+    font-size: 12px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  .modal__title {
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .modal__info {
+    margin-bottom: 10px;
   }
 }
 
