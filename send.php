@@ -14,10 +14,10 @@ $email = $_POST['email'];
 $title = "Новое обращение Best Tour Plan";
 $body = "
 <h2>Новое обращение</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message<br><br>
-<b>Ваш почтовый ящик:</b><br>$email
+<br>Имя:</br> $name<br>
+<br>Телефон:</br> $phone<br><br>
+<br>Сообщение:</br><br>$message<br><br>
+<br>Почта:</br><br>$email<br><br>
 ";
 
 // Настройки PHPMailer
