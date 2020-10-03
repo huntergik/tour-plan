@@ -394,12 +394,8 @@
       width: 104px
 
   .modal
-    &__overlay
-      &--visible
     &__dialog
       padding: 33px 38px
-      &--visible
-      &_hidden
 
 
 
@@ -679,9 +675,30 @@
       &--inline
         flex: 0 1 100%
   
+@media (max-width: 480px)
   .modal
     &__dialog
       min-width: 80%
+      padding: 25px 20px
+    &__input
+      padding: 0 13px
+      font-size: 10px
+      height: 40px
+      margin-bottom: 10px
+    &__message
+      padding-left: 13px
+      font-size: 10px
+      height: 100px
+      margin-bottom: 10px
+    &__title
+      font-size: 15px
+      line-height: 18px
+      margin: 0
+      margin-top: 5px
+      margin-bottom: 10px
+    &__info
+      margin-bottom: 10px
+    &__button
 
 
 @media (max-width: 440px)
@@ -743,31 +760,7 @@
     &__input
       width: 240px
 
-@media ( max-height: 360px )
-  .modal
-    &__dialog
-      max-height: 340px
-      // min-width: 75%
-      padding: 25px 20px
-    &__input
-      padding: 0 13px
-      font-size: 12px
-      height: 40px
-      margin-bottom: 7px
-    &__message
-      padding-left: 13px
-      font-size: 12px
-      height: 50px
-      margin-bottom: 7px
-    &__title
-      font-size: 15px
-      line-height: 18px
-      margin: 0
-      margin-top: 0px
-      margin-bottom: 7px
-    &__info
-      margin-bottom: 7px
-    &__button
+
 
 @media (max-width: 350px)
   .footer
@@ -789,7 +782,6 @@
       // top: 68px
       &--visible
         top: 68px
-
 
   .footer
     &-wrapper
@@ -823,32 +815,30 @@
       &-form
         margin-top: 60px
 
-  .modal
-    &__dialog
-      min-width: 75%
-      padding: 25px 20px
-    &__input
-      padding: 0 13px
-      font-size: 12px
-      height: 40px
-      margin-bottom: 10px
-    &__message
-      padding-left: 13px
-      font-size: 12px
-      height: 100px
-      margin-bottom: 10px
-    &__title
-      font-size: 15px
-      line-height: 18px
-      margin: 0
-      margin-top: 10px
-      margin-bottom: 10px
-    &__info
-      margin-bottom: 10px
-    &__button
+  // .modal
+  //   &__dialog
+  //     min-width: 75%
+  //     padding: 25px 20px
+  //   &__input
+  //     padding: 0 13px
+  //     font-size: 12px
+  //     height: 40px
+  //     margin-bottom: 10px
+  //   &__message
+  //     padding-left: 13px
+  //     font-size: 12px
+  //     height: 100px
+  //     margin-bottom: 10px
+  //   &__title
+  //     font-size: 15px
+  //     line-height: 18px
+  //     margin: 0
+  //     margin-top: 10px
+  //     margin-bottom: 10px
+  //   &__info
+  //     margin-bottom: 10px
+  //   &__button
     
-
-
 
   
 @media (max-width: 290px)
@@ -888,5 +878,119 @@
         font-size: 10px
         line-height: 12px
         margin-top: 5px
+
+@media (max-width: 240px)
+  // .navbar
+  //   &-menu
+  //   &-top
+  //     // padding-top: 15px
+  //     // padding-bottom: 15px
+  //   &-bottom
+  //     // padding-top: 20px
+  //     // top: 68px
+  //     &--visible
+  //       // top: 28px
     
-    
+
+@media (max-height: 960px)
+  .modal
+    &__dialog
+      // padding: 33px 58px
+
+@media (max-height: 640px)
+  .modal
+    &__dialog
+      padding: 25px 38px
+      max-height: 460px
+    &__input
+      height: 40px
+      margin-bottom: 13px
+    &__message
+      height: 100px
+      margin-bottom: 13px
+
+@media (max-height: 540px)
+  .modal
+    &__dialog
+      padding: 25px 38px
+      max-height: 460px
+    &__input
+      height: 40px
+      margin-bottom: 13px
+    &__message
+      height: 100px
+      margin-bottom: 13px
+  
+
+@media (max-height: 480px)
+  .modal
+    &__dialog
+      padding: 20px 38px
+      max-height: 360px
+    &__title
+      font-size: 15px
+      margin-bottom: 7px
+      margin-top: 0
+    &__input
+      height: 40px
+      margin-bottom: 7px
+      font-size: 12px
+    &__message
+      height: 70px
+      margin-bottom: 7px
+      font-size: 12px
+    &__button
+      // margin-bottom: 7px
+    &__info
+      margin-bottom: 7px
+
+@media (max-height: 380px)
+  .modal
+    &__dialog
+      max-height: 340px
+      // min-width: 75%
+      padding: 25px 20px
+    &__input
+      padding: 0 13px
+      font-size: 10px
+      height: 40px
+      margin-bottom: 7px
+    &__message
+      padding-left: 13px
+      font-size: 10px
+      height: 50px
+      margin-bottom: 7px
+    &__title
+      font-size: 12px
+      line-height: 15px
+      margin: 0
+      margin-top: 0px
+      margin-bottom: 7px
+    &__info
+      margin-bottom: 7px
+    &__button
+      // margin-bottom: 7px
+
+  
+@media (max-height: 340px)
+  .modal
+    &__dialog
+      // max-height: 260px
+    &__input
+      padding: 0 13px
+      // font-size: 10px
+      height: 30px
+      // margin-bottom: 5px
+    &__message
+      padding-left: 13px
+      // font-size: 10px
+      // height: 40px
+      // margin-bottom: 5px
+    &__info 
+      font-size: 10px
+    &__button
+      min-width: 140px
+      min-height: 30px
+      font-size: 10px
+      padding-top: 12px
+      padding-bottom: 12px
