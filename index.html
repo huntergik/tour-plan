@@ -32,8 +32,15 @@
         });
       }
     </script> -->
+    <!-- <script>
+      $(document).ready(function () {
+        $("#hereBtn").click(function (e) {
+          $("#alertModal").modal("show");
+        });
+      });
+    </script> -->
   </head>
-  <body>
+  <body keydown="ESCclose(event)">
     <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar-top">
@@ -620,6 +627,7 @@
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
         <form
+          name="form-1"
           action="send.php"
           method="POST"
           class="subscribe newsletter__subscribe"
@@ -1073,7 +1081,12 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
+            <form
+              name="form-2"
+              action="send.php"
+              method="POST"
+              class="footer__form"
+            >
               <input
                 type="text"
                 class="input footer__input"
