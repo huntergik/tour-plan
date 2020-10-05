@@ -68,6 +68,7 @@ img {
 
 .invalid {
   color: #EC1F46;
+  border-bottom: 1px solid #EC1F46;
 }
 
 .input {
@@ -530,6 +531,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #333333;
+  outline: none;
 }
 
 .search__button {
@@ -1893,9 +1895,6 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;

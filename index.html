@@ -1084,7 +1084,7 @@
             <form action="send.php" method="POST" class="footer__form form">
               <div class="footer__input-group">
                 <input
-                  type="name"
+                  type="text"
                   class="input footer__input"
                   placeholder="Your Full Name*"
                   name="name"
@@ -1099,6 +1099,7 @@
                   placeholder="Phone Number*"
                   name="phone"
                   required
+                  minlength="18"
                 />
               </div>
               <textarea
@@ -1164,6 +1165,7 @@
             placeholder="Phone Number*"
             name="phone"
             required
+            minlength="18"
           />
           <input
             type="email"

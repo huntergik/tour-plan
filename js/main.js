@@ -58,7 +58,7 @@ $(document).ready(function () {
   // обработка форм отправки
   $(".form").each(function () {
     $(this).validate({
-      errorClasse: "Invalid",
+      errorClass: "invalid",
       messages: {
         name: {
           required: "Please specify your name",
@@ -70,6 +70,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Phone is required",
+          minlength: "Enter full phone number",
         },
       },
     });
