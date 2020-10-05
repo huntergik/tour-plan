@@ -14,25 +14,22 @@
   .card
     width: 230px
     height: 230px
-  
 
   .packages
     &-card
-      &__content 
+      &__content
         padding: 26px 21px 25px 44px
-  
 
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__copyrait
       margin-left: 80px
     &__title
       font-size: 15px
     &__item
       font-size: 13px
-      
-  
 
 @media (max-width: 992px)
   .container, .newsletter-wrapper
@@ -62,11 +59,11 @@
     &-right
       flex-direction: row
     &-slider
-      width: 100%   
+      width: 100%
   .booking
     width: 340px
   .map
-    width: 340px 
+    width: 340px
   .reviews
     padding: 40px 0 40px 0
     &-slider
@@ -74,7 +71,7 @@
         max-width: 580px
   .activities
     padding-top: 40px
-    padding-bottom: 70px  
+    padding-bottom: 70px
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -83,12 +80,11 @@
     width: 340px
     height: 250px
 
-
   .packages
     &-grid
       grid-template-rows: repeat(3, 1fr)
     &-card
-      &__content 
+      &__content
         padding: 46px 21px 25px 44px
   .card-1
     grid-row: 1 / 2
@@ -106,7 +102,6 @@
     grid-row: 3 / 4
     grid-column: 7 / 13
 
-
   .footer
     padding-top: 80px
     padding-bottom: 40px
@@ -114,7 +109,8 @@
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
     &__input
-      flex-basis: 48%
+      &-group
+        flex-basis: 48%
     &__logo
       &_wrapper
         grid-row: 1 / 2
@@ -152,8 +148,6 @@
   .modal
     &__dialog
       padding: 33px 58px
-      
-
 
 @media ( max-width: 899px  )
   .modal
@@ -166,11 +160,11 @@
     &__info
       margin-bottom: 15px
       order: 1
-  
+
 @media (max-width: 768px)
   // body.lock
   //   overflow: hidden
-  
+
   .container
     max-width: 576px
     width: 92%
@@ -240,7 +234,6 @@
         margin: 0
         margin-top: 10px
 
-  
   .hotel
     &-name
       flex-basis: 100%
@@ -251,7 +244,7 @@
         width: 100%
       &__name
         margin-top: 10px
-        margin-bottom: 0  
+        margin-bottom: 0
       &__rating
         display: none
       &__offer
@@ -273,7 +266,7 @@
         width: 100%
         // height: auto
         object-fit: cover
-        
+
   .booking
     width: 100%
   .map
@@ -286,7 +279,7 @@
       align-items: flex-start
     &-title
       width: 100%
-  .subscribe 
+  .subscribe
     width: 100%
   .reviews
     padding: 40px 0 40px 0
@@ -304,16 +297,15 @@
         &--prev
           left: 50%
           margin-left: -65px
-          transform: translate(-50%, 0) 
+          transform: translate(-50%, 0)
         &--next
           right: 50%
           margin-right: -65px
           transform: translate(50%, 0)
 
-
   .activities
     padding-top: 40px
-    padding-bottom: 60px 
+    padding-bottom: 60px
     &__title
       font-size: 18px
       line-height: 23px
@@ -324,7 +316,6 @@
     &__image
       width: 100%
       object-fit: cover
-
 
   .packages
     padding-top: 20px
@@ -339,7 +330,7 @@
       height: 400px
       &__cards
         height: 400px
-      &__content 
+      &__content
         padding: 20px 21px 25px 20px
         &-contents
           padding: 15px 21px 20px 30px
@@ -384,12 +375,12 @@
       &-buttons
         padding: 10px 20px
 
-
   .footer
     padding-top: 73px
     padding-bottom: 33px
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__logo
       width: 104px
 
@@ -397,16 +388,12 @@
     &__dialog
       padding: 33px 38px
 
-
-
 @media (max-width: 580px)
   .box
     &-info
       margin-top: 19px
     &-price
       margin-top: 19px
-
-
 
 @media (max-width: 576px)
   .logo
@@ -425,7 +412,6 @@
         width: 100%
         height: 100%
         object-fit: cover
-
 
   .newsletter
     padding: 76px 0 83px 0
@@ -448,7 +434,6 @@
     height: 255px
     overflow: hidden
     &__image
-      
 
   .packages
     &__title
@@ -465,7 +450,7 @@
     &-text
       display: none
   .packages
-    &-card 
+    &-card
       height: 300px
       &__cards
         flex-direction: row
@@ -531,7 +516,6 @@
     grid-row: 5 / 6
     grid-column: 1 / 13
 
-
   .footer
     padding-top: 69px
     padding-bottom: 21px
@@ -581,7 +565,7 @@
     &__info
       margin-bottom: 15px
       order: 1
-      
+
   .modal
     &__dialog
       min-width: 70%
@@ -596,19 +580,17 @@
     &__payment
       margin-top: 10px
 
-
-
 @media (max-width: 480px)
   .navbar
     &-top
       padding-top: 27px
-      padding-bottom: 27px 
+      padding-bottom: 27px
     &-bottom
       // top: 72px
       &--visible
         top: 72px
   .newsletter
-    &-title 
+    &-title
       font-style: normal
       font-weight: 300
       font-size: 20px
@@ -616,10 +598,9 @@
       &__strong
         font-size: 30px
         line-height: 38px
-  .subscribe 
+  .subscribe
     &__input
       padding-left: 20px
-
 
   .hotel
     &-slider
@@ -631,14 +612,13 @@
         height: 100%
         object-fit: cover
 
+  .packages
 
-  .packages 
-    
     &__title
       font-size: 20px
       line-height: 25px
-    &-card   
-      &__cards 
+    &-card
+      &__cards
       &__content
         padding: 25px 15px 25px 15px
         &-contents
@@ -652,14 +632,13 @@
         display: flex
       &__icon
         margin-right: 8px
-      &__text 
+      &__text
         font-size: 10px
         line-height: 13px
     &__button
       padding: 7px 15px
       &-buttons
         padding: 7px 15px
-
 
   .footer
     &__social
@@ -674,7 +653,7 @@
     &__title
       &--inline
         flex: 0 1 100%
-  
+
 @media (max-width: 480px)
   .modal
     &__dialog
@@ -684,27 +663,28 @@
       padding: 0 13px
       font-size: 10px
       height: 40px
-      margin-bottom: 10px
+      margin-top: 10px
     &__message
       padding-left: 13px
       font-size: 10px
       height: 100px
-      margin-bottom: 10px
+      margin-top: 10px
     &__title
       font-size: 15px
       line-height: 18px
       margin: 0
-      margin-top: 5px
-      margin-bottom: 10px
+      // margin-top: 5px
+      margin-top: 10px
     &__info
       margin-bottom: 10px
     &__button
-
+    &__box
+      margin-top: 10px
 
 @media (max-width: 440px)
-  .packages 
-    &-card   
-      &__cards 
+  .packages
+    &-card
+      &__cards
       &__content
         align-items: center
         justify-content: space-between
@@ -712,7 +692,7 @@
           align-items: center
           justify-content: space-between
   .box
-    &__title 
+    &__title
       font-size: 12px
       line-height: 12px
       &-titles
@@ -729,7 +709,7 @@
         display: flex
       &__icon
         margin-right: 8px
-      &__text 
+      &__text
         font-size: 10px
         line-height: 13px
     &-price
@@ -751,16 +731,12 @@
       &-buttons
         padding: 7px 15px
 
-
-
 @media (max-width: 400px)
   .navbar
     &__mobile
   .search
     &__input
       width: 240px
-
-
 
 @media (max-width: 350px)
   .footer
@@ -769,8 +745,6 @@
       &-form
         grid-row: 7
         grid-column: 1 / 6
-    
-
 
 @media (max-width: 320px)
   .navbar
@@ -817,6 +791,7 @@
 
   // .modal
   //   &__dialog
+  //     overflow-y: auto
   //     min-width: 75%
   //     padding: 25px 20px
   //   &__input
@@ -838,9 +813,7 @@
   //   &__info
   //     margin-bottom: 10px
   //   &__button
-    
 
-  
 @media (max-width: 290px)
   .footer
     &__contact
@@ -857,15 +830,12 @@
         line-height: 15px
         margin-top: 7px
 
-
-
 @media (max-width: 280px)
   .navbar
     &__mobile
   .search
     &__input
       width: 220px
-
 
   .footer
     &-wrapper
@@ -890,7 +860,6 @@
   //     // top: 68px
   //     &--visible
   //       // top: 28px
-    
 
 @media (max-height: 960px)
   .modal
@@ -920,7 +889,6 @@
     &__message
       height: 100px
       margin-bottom: 13px
-  
 
 @media (max-height: 480px)
   .modal
@@ -971,7 +939,6 @@
     &__button
       // margin-bottom: 7px
 
-  
 @media (max-height: 340px)
   .modal
     &__dialog
@@ -986,7 +953,7 @@
       // font-size: 10px
       // height: 40px
       // margin-bottom: 5px
-    &__info 
+    &__info
       font-size: 10px
     &__button
       min-width: 140px

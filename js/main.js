@@ -54,13 +54,35 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
-  // function ESCclose(evt) {
-  //   if (evt.keyCode == 27) {
-  //     //window.close();
-  //     console.log("close the window...");
-  //   }
-  // }
+
+  // обработка форм отправки
+  $(".form").each(function () {
+    $(this).validate({
+      errorClasse: "Invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "The name must be at least 2 characters long",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "Phone is required",
+        },
+      },
+    });
+  });
+  $(".phone").mask("+7 (000) 000-00-00");
 });
+
+// function ESCclose(evt) {
+//   if (evt.keyCode == 27) {
+//     //window.close();
+//     console.log("close the window...");
+//   }
+// }
 
 // $(document).ready(function () {
 //   $("#hereBtn").click(function (e) {
