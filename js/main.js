@@ -30,6 +30,7 @@ $(document).ready(function () {
     },
   });
 
+  // кнопка бургера-меню
   var menuButton = $(".menu-button");
   menuButton.on("click", function () {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
@@ -54,6 +55,11 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+  // закрытие на esc
+  // var closseButton = $(".modal");
+  // menuButton.on("click", function () {
+  //   $(".modal").toggleClass(".modal");
+  // });
 
   // обработка форм отправки
   $(".form").each(function () {
@@ -81,12 +87,7 @@ $(document).ready(function () {
   AOS.init();
 });
 
-// function ESCclose(evt) {
-//   if (evt.keyCode == 27) {
-//     //window.close();
-//     console.log("close the window...");
-//   }
-// }
+// скрипт закрытия модального окна на клав.: ESC
 
 // $(document).ready(function () {
 //   $("#hereBtn").click(function (e) {
@@ -94,8 +95,25 @@ $(document).ready(function () {
 //   });
 // });
 
+// function ESCclose(evt) {
+//   if (evt.keyCode == 27) {
+//     //window.close();
+//     console.log("close the window...");
+//   }
+// }
 // $(document).on("keydown", function (e) {
 //   if (e.keyCode == 27) window.close();
 // });
 
 // $("body").toggleClass("lock");
+
+// скрипт закрытия модального окна на клав.: ESC
+// var elements = $(".modal__overlay, .modal__dialog");
+
+// $(".modal__overlay").click(function () {
+//   elements.addClass("active");
+// });
+
+// $(".modal__close").click(function () {
+//   elements.removeClass("active");
+// });
