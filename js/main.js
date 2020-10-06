@@ -88,7 +88,6 @@ $(document).ready(function () {
 });
 
 // скрипт закрытия модального окна на клав.: ESC
-
 // $(document).ready(function () {
 //   $("#hereBtn").click(function (e) {
 //     $("#alertModal").modal("show");
@@ -105,9 +104,6 @@ $(document).ready(function () {
 //   if (e.keyCode == 27) window.close();
 // });
 
-// $("body").toggleClass("lock");
-
-// скрипт закрытия модального окна на клав.: ESC
 // var elements = $(".modal__overlay, .modal__dialog");
 
 // $(".modal__overlay").click(function () {
@@ -117,3 +113,6 @@ $(document).ready(function () {
 // $(".modal__close").click(function () {
 //   elements.removeClass("active");
 // });
+
+// скрипт отключения скролла сайта при открытом nav-меню
+// $("body").toggleClass("lock");
