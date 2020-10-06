@@ -18,6 +18,7 @@ $body = "
 <br>Имя:</br>$name<br>
 <br>Телефон:</br> $phone<br><br>
 <br>Сообщение:</br><br>$message<br><br>
+<br>Почта:</br><br>$email<br><br>
 ";
 
 // Формирование самого письма-2
@@ -72,12 +73,12 @@ else {$result = "error";}
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
 
+// if($mail){$result = "success"; $mail = "addAddress"}
 // Отображение результата
 // echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
-header('location: newsletter.html');
+
 header('location: thankyou.html');
-
-
+// header('location: newsletter.html');
 // If(одно условие){если это условие выполняется, то выполняется что то } ,else {иначе выполняется что то другое}- и да, я мастер объяснения))
 // if ($popuptype === '1') {
 //      $message .= 'Услуга регистрации: СТАНДАРТ';
