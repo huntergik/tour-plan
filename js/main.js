@@ -86,33 +86,3 @@ $(document).ready(function () {
   // скрипт анимации AOS:
   AOS.init();
 });
-
-// скрипт закрытия модального окна на клав.: ESC
-// $(document).ready(function () {
-//   $("#hereBtn").click(function (e) {
-//     $("#alertModal").modal("show");
-//   });
-// });
-
-// function ESCclose(evt) {
-//   if (evt.keyCode == 27) {
-//     //window.close();
-//     console.log("close the window...");
-//   }
-// }
-// $(document).on("keydown", function (e) {
-//   if (e.keyCode == 27) window.close();
-// });
-
-// var elements = $(".modal__overlay, .modal__dialog");
-
-// $(".modal__overlay").click(function () {
-//   elements.addClass("active");
-// });
-
-// $(".modal__close").click(function () {
-//   elements.removeClass("active");
-// });
-
-// скрипт отключения скролла сайта при открытом nav-меню
-// $("body").toggleClass("lock");

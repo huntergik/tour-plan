@@ -11,7 +11,6 @@ $message = $_POST['message'];
 $email = $_POST['email'];
 
 // Формирование самого письма
-// $form1 = $_POST['form1'];
 $title = "Новое обращение Best Tour Plan";
 $body = "
 <h2>Новое обращение</h2>
@@ -20,24 +19,6 @@ $body = "
 <br>Сообщение:</br><br>$message<br><br>
 <br>Почта:</br><br>$email<br><br>
 ";
-
-// Формирование самого письма-2
-// $title = "Новое обращение Best Tour Plan";
-// $body = "
-// <h2>Новое обращение</h2>
-// <br>Почта:</br><br>$email<br><br>
-// ";
-
-// Формирование самого письма-3
-// $form1 = $_POST['form1'];
-// $title = "Новое обращение Best Tour Plan";
-// $body = "
-// <h2>Новое обращение</h2>
-// <br>Имя:</br>$name<br>
-// <br>Телефон:</br> $phone<br><br>
-// <br>Сообщение:</br><br>$message<br><br>
-// <br>Почта:</br><br>$email<br><br>
-// ";
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -73,18 +54,7 @@ else {$result = "error";}
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
 
-// if($mail){$result = "success"; $mail = "addAddress"}
 // Отображение результата
 // echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
-
 header('location: thankyou.html');
-// header('location: newsletter.html');
 // If(одно условие){если это условие выполняется, то выполняется что то } ,else {иначе выполняется что то другое}- и да, я мастер объяснения))
-// if ($popuptype === '1') {
-//      $message .= 'Услуга регистрации: СТАНДАРТ';
-//      }
-// if ($popuptype === '2') {
-//      $message .= 'Услуга регистрации: КОМФОРТ';
-//      }
-
-// $mail = mail($mailto, $subject, $message, $headers);
