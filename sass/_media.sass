@@ -14,12 +14,10 @@
   .card
     width: 230px
     height: 230px
-
   .packages
     &-card
       &__content
         padding: 26px 21px 25px 44px
-
   .footer
     &__input
       &-group
@@ -49,6 +47,9 @@
         font-size: 12px
         line-height: 15px
   .search
+    &__button:hover
+      background-color: none !important
+      box-shadow: 0
     &__input
       width: 340px
   .hotel
@@ -69,7 +70,7 @@
     width: 340px
     height: 210px
   .newsletter
-    height: 260px
+    // height: 260px
     // padding: 80px 0 65px 0
   .reviews
     padding: 15px 0 20px 0
@@ -92,7 +93,6 @@
   .card
     width: 340px
     height: 255px
-
   .packages
     &-grid
       grid-template-rows: repeat(3, 1fr)
@@ -114,7 +114,6 @@
   .card-5
     grid-row: 3 / 4
     grid-column: 7 / 13
-
   .footer
     padding-top: 50px
     padding-bottom: 40px
@@ -183,7 +182,6 @@
     &__link
       &_wrapper
         max-width: 100%
-
   .modal
     &__dialog
       padding: 33px 58px
@@ -454,10 +452,10 @@
         height: 100%
         object-fit: cover
 
-  .newsletter
-    padding: 76px 0 83px 0
-    &__title
-      margin-bottom: 37px
+  // .newsletter
+  //   padding: 76px 0 83px 0
+  //   &__title
+  //     margin-bottom: 37px
   .subscribe
     width: 100%
   .reviews
@@ -658,7 +656,6 @@
         object-fit: cover
 
   .packages
-
     &__title
       font-size: 20px
       line-height: 25px
@@ -698,8 +695,6 @@
     &__title
       &--inline
         flex: 0 1 100%
-
-@media (max-width: 480px)
   .modal
     &__dialog
       min-width: 80%
@@ -775,6 +770,14 @@
       padding: 7px 15px
       &-buttons
         padding: 7px 15px
+  // .newsletter
+  //   // padding: 70px 0 83px 0
+  //   height: 319px
+  //   &-wrapper
+  //     // width: 88%
+  //   &-title
+  //     // margin-top: 10px
+  //     // margin-bottom: 35px
 
 @media (max-width: 400px)
   .navbar
@@ -801,15 +804,87 @@
       // top: 68px
       &--visible
         top: 68px
+  .breadcrumb
+    &-list
+      padding: 11px 0
+      // padding-top: 25px
+      // padding-bottom: 16px
+  .hotel
+    &-info
+      padding-bottom: 38px
+      &__name
+        font-size: 24px
+    &-slider
+      height: 179px
+  .newsletter
+    padding: 70px 0 83px 0
+    height: 319px
+    &-wrapper
+      width: 88%
+    &-title
+      margin-top: 10px
+      margin-bottom: 35px
+  .reviews
+    padding: 25px 0 0 0
+    &__title
+    &-slider
+      &__button
+        // left: -50px
+        &--prev
+          left: 40%
+        &--next
+          right: 40%
+      &__item
+        padding: 0 40px 36px
+  .swiper
+    &-container
+    &-wrapper
 
   .footer
     &-wrapper
+      grid-template-columns: 100%
       grid-gap: 10px
+    &__logo
+      width: 99px
+      &_wrapper
+        grid-row: 1
+        margin: 0
+    &__social
+      &-links
+        margin-top: 20px
+      &-network
+        grid-row: 2
+        margin: 0
+    &__title
+      &--inline
+        margin-right: 0
+      &--mb-3
+    &__text
+      margin-top: 0
+      margin-bottom: 30px
+      &--bottom
+        margin-bottom: 0
+    &__legal
+      grid-row: 3
+      margin-top: 20px
+    &__additional
+      grid-row: 4
+      margin-top: 22px
+      margin-left: 0
+    &__categories
+      grid-row: 5
+      margin-top: 30px
     &__contact
       &-details
+        grid-row: 6
+        max-width: 90%
+        margin-top: 40px
       &-form
         grid-row: 7
-        grid-column: 1 / 7
+        margin-top: 40px
+    &__icon
+      &-wrapper
+        min-width: 28px
     &__copyrait
       width: 290px
       margin-top: 30px
@@ -817,22 +892,17 @@
       margin-top: 15px
     &__info
       margin: 0
-    &__additional
-      margin-top: 30px
-    &__categories
-      margin-top: 30px
-    &__social
-      &-links
-        margin-top: 20px
-      &-network
-        margin-top: 30px
-    &__legal
-      margin-top: 30px
-    &__contact
-      &-details
-        margin-top: 40px
-      &-form
-        margin-top: 60px
+    &__item
+      &--mb-2
+        align-items: flex-start
+    &__bottom
+      grid-row: 8
+      margin: 0
+    &__copyrait
+      margin-top: 20px
+    &__payment
+      margin: 0
+      margin-top: 10px
 
 @media (max-width: 290px)
   .footer
