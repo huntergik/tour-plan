@@ -9,7 +9,6 @@
       rel="preload"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -255,18 +254,9 @@
             </div>
             <!-- /.booking -->
             <!-- <div id="map" class="map"></div> -->
-            <div class="map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d988.0104663780853!2d98.29436949017253!3d7.890689096949103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2skz!4v1600757511553!5m2!1sru!2skz"
-                width="100%"
-                height="213"
-                frameborder="0"
-                style="border: 0"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0"
-              ></iframe>
-            </div>
+            <div class="map" data-map-height="213"
+              data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d988.0104663780853!2d98.29436949017253!3d7.890689096949103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2skz!4v1600757511553!5m2!1sru!2skz">
+              <img class="map__image" src="img/map-google.jpg" alt="Map: google.com"> </div>
             <!-- /.map -->
           </div>
           <!-- /.hotel-right -->
@@ -1160,7 +1150,6 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/aos.js"></script>
     <script src="js/parallax.js"></script>
   </body>
 </html>
