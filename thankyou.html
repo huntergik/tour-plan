@@ -4,34 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
+    <style>
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      
+    </style>
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=f7e0f895-775f-43da-9020-bf85f2d3bc65&lang=ru_RU"
-      type="text/javascript"
-    ></script>
-    <script type="text/javascript">
-      // Функция ymaps.ready() будет вызвана, когда
-      // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-      ymaps.ready(init);
-      function init() {
-        // Создание карты.
-        var myMap = new ymaps.Map("map", {
-          // Координаты центра карты.
-          // Порядок по умолчанию: «широта, долгота».
-          // Чтобы не определять координаты центра карты вручную,
-          // воспользуйтесь инструментом Определение координат.
-          center: [7.8869, 98.2935],
-          // Уровень масштабирования. Допустимые значения:
-          // от 0 (весь мир) до 19.
-          zoom: 16,
-        });
-      }
-    </script> -->
+    
   </head>
   <body>
     <header class="navbar navbar__mobile_fixed">
@@ -163,6 +149,9 @@
             <p class="hotel-description hotel-info__hotel-description">
               Our manager will contact you in 5 minutes.
             </p>
+            <button class="button btn thankyou__button " type="submit" >
+              <a href="index.html">On Main Page</a>
+            </button>
           </div>
         </div>
         <!-- /.hotel-info -->
@@ -170,7 +159,6 @@
       <!-- /.container -->
     </section>
     <!-- /.section hotel -->
-
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
@@ -410,13 +398,11 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
-
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <!-- Подключаем файл JS скриптов -->
-    <script src="js/script.js"></script>
   </body>
 </html>
