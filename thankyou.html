@@ -9,7 +9,18 @@
         text-decoration: none;
         color: #fff;
       }
-      
+      .button  {
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+        width: 160px;
+        min-height: 50px;
+        font-family: inherit;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+      }
     </style>
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
@@ -17,7 +28,6 @@
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    
   </head>
   <body>
     <header class="navbar navbar__mobile_fixed">
@@ -149,9 +159,9 @@
             <p class="hotel-description hotel-info__hotel-description">
               Our manager will contact you in 5 minutes.
             </p>
-            <button class="button btn thankyou__button " type="submit" >
-              <a href="index.html">On Main Page</a>
-            </button>
+            <a href="index.html" class="button btn" >
+              On Main Page
+            </a>
           </div>
         </div>
         <!-- /.hotel-info -->
@@ -163,11 +173,7 @@
       <div class="container">
         <div class="footer-wrapper">
           <a href="index.html" class="footer__logo_wrapper">
-            <img
-              src="img/vertical-logo.svg"
-              alt="Logo: Best Tour Plan"
-              class="logo footer__logo"
-            />
+            <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo" />
           </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
@@ -218,9 +224,7 @@
                 <a href="#" class="footer__link">Deals.mu loyalty program </a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link"
-                  >Promote your Business on BTP</a
-                >
+                <a href="#" class="footer__link">Promote your Business on BTP</a>
               </li>
             </ul>
           </div>
@@ -228,33 +232,12 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a
-                href="https://www.facebook.com"
-                target="_blank"
-                class="footer__link"
-                ><img
-                  class="footer__link_hover"
-                  src="img/facebook.svg"
-                  alt="Icon: facebook"
-              /></a>
-              <a
-                href="https://www.youtube.com"
-                target="_blank"
-                class="footer__link"
-                ><img
-                  class="footer__link_hover"
-                  src="img/youtube.svg"
-                  alt="Icon: youtube"
-              /></a>
-              <a
-                href="https://www.instagram.com"
-                target="_blank"
-                class="footer__link"
-                ><img
-                  class="footer__link_hover"
-                  src="img/instagram.svg"
-                  alt="Icon: instagram"
-              /></a>
+              <a href="https://www.facebook.com" target="_blank" class="footer__link"><img class="footer__link_hover"
+                  src="img/facebook.svg" alt="Icon: facebook" /></a>
+              <a href="https://www.youtube.com" target="_blank" class="footer__link"><img class="footer__link_hover"
+                  src="img/youtube.svg" alt="Icon: youtube" /></a>
+              <a href="https://www.instagram.com" target="_blank" class="footer__link"><img class="footer__link_hover"
+                  src="img/instagram.svg" alt="Icon: instagram" /></a>
             </div>
             <!-- /.footer__social-links -->
           </div>
@@ -285,87 +268,43 @@
             <ul class="footer__ul">
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
-                  <img
-                    class="footer__icon"
-                    src="img/map-marker.svg"
-                    alt="Icon: map-marker"
-                  />
+                  <img class="footer__icon" src="img/map-marker.svg" alt="Icon: map-marker" />
                 </div>
-                <a href="#" class="footer__link"
-                  >9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
-                  States</a
-                >
+                <a href="#" class="footer__link">9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
+                  States</a>
               </li>
-
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
-                  <img
-                    class="footer__icon"
-                    src="img/contact-phone-call.svg"
-                    alt="Icon: contact-phone-call"
-                  />
+                  <img class="footer__icon" src="img/contact-phone-call.svg" alt="Icon: contact-phone-call" />
                 </div>
                 <div class="footer__link_wrapper">
-                  <a href="#" class="footer__link"
-                    >Tel (business hours) : 269 1500</a
-                  >
-                  <a href="#" class="footer__link"
-                    >Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am –
-                    20:00 pm)</a
-                  >
-
-                  <a href="#" class="footer__link"
-                    >Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</a
-                  >
+                  <a href="tel:0123456789" class="footer__link">Tel (business hours) : 269 1500</a>
+                  <a href="tel:0123456789" class="footer__link">Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am –
+                    20:00 pm)</a>
+                  <a href="tel:0123456789" class="footer__link">Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</a>
                 </div>
               </li>
-
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
-                  <img
-                    class="footer__icon"
-                    src="img/email.svg"
-                    alt="Icon: email"
-                  />
+                  <img class="footer__icon" src="img/email.svg" alt="Icon: email" />
                 </div>
-                <a href="#" class="footer__link">cherly.lawson@example.com</a>
+                <a href="malito:example@example.com" class="footer__link">cherly.lawson@example.com</a>
               </li>
             </ul>
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form
-              name="form-2"
-              action="send.php"
-              method="POST"
-              class="footer__form form"
-            >
+            <h3 class="footer__title footer__title--mb-3 footer__title--mb-4">Send us a message</h3>
+            <form action="send.php" method="POST" class="footer__form form">
               <div class="footer__input-group">
-                <input
-                  type="name"
-                  class="input footer__input"
-                  placeholder="Your Full Name*"
-                  name="name"
-                  required
-                />
+                <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required
+                  minlength="2" />
               </div>
               <div class="footer__input-group">
-                <input
-                  type="tel"
-                  class="input footer__input"
-                  placeholder="Phone Number*"
-                  name="phone"
-                  required
-                />
+                <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone" required
+                  minlength="18" />
               </div>
-              <textarea
-                class="message footer__message"
-                cols="30"
-                rows="10"
-                placeholder="Message"
-                name="message"
-              ></textarea>
+              <textarea class="message footer__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
               <div class="footer__box">
                 <button class="button footer__button" type="submit">
                   Send
@@ -377,18 +316,12 @@
           <!-- /.footer__contact-form -->
           <div class="footer__bottom">
             <div class="footer__copyrait">
-              <a href="#" class="footer__text footer__text--bottom"
-                >Disclaimer</a
-              >
-              <a href="#" class="footer__text footer__text--bottom"
-                >Conditions of use</a
-              >
-              <a href="#" class="footer__text footer__text--bottom"
-                >Cancellation policy</a
-              >
+              <a href="#" class="footer__text footer__text--bottom">Disclaimer</a>
+              <a href="#" class="footer__text footer__text--bottom">Conditions of use</a>
+              <a href="#" class="footer__text footer__text--bottom">Cancellation policy</a>
             </div>
             <div class="footer__payment">
-              <img src="img/payment.png" alt="payment" />
+              <img class="footer__payment_payment" src="img/payment.png" alt="payment" />
             </div>
           </div>
           <!-- /.footer__bottom -->
