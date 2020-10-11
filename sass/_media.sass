@@ -238,6 +238,10 @@
     width: 92%
   body
     // padding-top: 78px
+  .navbar
+  .search
+    &__input
+      padding-left: 0
   .hotel
     &-name
       // flex-basis: 100%
@@ -246,6 +250,9 @@
       flex-wrap: wrap
       align-items: center
       // justify-content: space-between
+    &-slider
+      max-width: 700px
+      min-height: 450px
     &-info
       &__text
         width: 100%
@@ -260,9 +267,11 @@
   .stars
     // flex-basis: auto
   .hotel
+    padding-bottom: 61px
     &-right
-      flex-direction: column
-      min-height: 450px
+      flex-direction: row
+      // min-height: 450px
+      justify-content: space-between
     &__slider
       margin-right: 20px
     &-slider
@@ -274,28 +283,32 @@
         // height: auto
         object-fit: cover
   .booking
-    width: 100%
+    width: 340px
   .map
-    width: 100%
+    width: 340px
     &__image
       width: 100%
       height: 210px
   .newsletter
+    padding-bottom: 74px
     &-wrapper
-      max-width: 92%
-      flex-direction: column
-      align-items: flex-start
-    &-title
-      width: 100%
-  .subscribe
-    width: 100%
-  .reviews
-    padding: 40px 0 40px 0
+      //   max-width: 92%
+      //   flex-direction: column
+      //   align-items: flex-start
     &__title
-      font-size: 30px
+      margin-top: 10px
+      // margin: 0
+  .subscribe
+    width: 350px
+  .reviews
+    padding: 13px 0 40px 0
+    &__title
+      font-size: 29px
       line-height: 38px
       margin-bottom: 50px
     &-slider
+      &__text
+        max-width: 452px
       &__item
         padding: 0 30px 30px
         &:after, &::before
@@ -311,12 +324,12 @@
           margin-right: -65px
           transform: translate(50%, 0)
   .activities
-    padding-top: 40px
-    padding-bottom: 60px
-    &__title
-      font-size: 18px
-      line-height: 23px
-      margin-bottom: 36px
+    padding-top: 5px
+    padding-bottom: 50px
+    // &__title
+    // font-size: 18px
+    // line-height: 23px
+    // margin-bottom: 36px
   .card
     width: 49%
     height: 255px
@@ -324,13 +337,36 @@
       width: 100%
       object-fit: cover
   .footer
-    padding-top: 73px
+    padding-top: 50px
     padding-bottom: 33px
     &__input
       &-group
-        flex-basis: 100%
+        // flex-basis: 100%
     &__logo
-      width: 104px
+      width: 98px
+    &__title
+      &--inline
+        margin-right: 52px
+    &__item
+      line-height: 22px
+    &__social
+      &-links
+        margin-top: 25px
+    &-network
+    &__categories
+      margin-top: 4px
+    &__legal
+      margin-top: 4px
+    &__additional
+      margin-top: 4px
+    &__contact
+      &-details
+        margin-top: 23px
+      &-form
+    &__icon
+      margin-top: 2px
+      margin-left: 5px
+
   .modal
     &__dialog
       padding: 33px 38px
